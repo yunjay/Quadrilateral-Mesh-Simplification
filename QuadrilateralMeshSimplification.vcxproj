@@ -104,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\lab\Desktop\yj\QuadrilateralMeshSimplification\include;C:\Users\lab\Desktop\yj\QuadrilateralMeshSimplification\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\lab\Desktop\yj\QuadrilateralMeshSimplification\include;C:\Users\lab\Desktop\yj\QuadrilateralMeshSimplification\include\imgui;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,10 +130,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\LoadShader.h" />
-    <ClInclude Include="include\Model.h" />
+    <ClInclude Include="include\QuadModel.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="include\imgui\imgui.cpp" />
+    <ClCompile Include="include\imgui\imgui_demo.cpp" />
+    <ClCompile Include="include\imgui\imgui_draw.cpp" />
+    <ClCompile Include="include\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="include\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="include\imgui\imgui_tables.cpp" />
+    <ClCompile Include="include\imgui\imgui_widgets.cpp" />
     <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\byPrimitiveID.frag" />
+    <None Include="shaders\diffuseQuad.frag" />
+    <None Include="shaders\diffuseQuad.geom" />
+    <None Include="shaders\diffuseQuad.vert" />
+    <None Include="shaders\elementEdges.frag" />
+    <None Include="shaders\elementEdges.geom" />
+    <None Include="shaders\elementEdges.vert" />
+    <None Include="shaders\random.frag" />
+    <None Include="shaders\random.vert" />
+    <None Include="shaders\randomQuads.frag" />
+    <None Include="shaders\randomQuads.geom" />
+    <None Include="shaders\randomQuads.vert" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
