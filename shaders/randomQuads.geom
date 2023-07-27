@@ -12,7 +12,7 @@ out GS_OUT{
 	//vec4	color;
 }gs_out;
 void main(){
-    //traingle fan needs ordering. 0-1-3-2 or 1-0-2-3 etc
+    //traingle strip needs ordering. 0-1-3-2 or 1-0-2-3 etc
     //If a geometry shader is present, gl_PrimitiveID needs to be defined, or will be undefined.
     //gl_PrimitiveIDIn is a built in input.
     //gl_Position=gs_in[0].vertex;
